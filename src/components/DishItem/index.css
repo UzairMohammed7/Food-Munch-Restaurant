@@ -1,0 +1,279 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.dish-item-container {
+  border-radius: 10px;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(17, 17, 17, 0.328);
+}
+
+@media screen and (max-width:768px) {
+  .tab-container {
+      margin: 0 30px 0 30px;
+  }
+}
+
+.veg-border {
+  border: 1px solid #00923f;
+  align-self: flex-start;
+  margin: 5px 10px;
+
+}
+
+.non-veg-border {
+  border: 1px solid #92282a;
+  margin: 5px 10px;
+
+}
+
+.veg-round {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: #00923f;
+}
+
+.non-veg-round {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: #92282a;
+}
+
+.dish-details-container {
+  flex-grow: 1;
+  margin-left: 5px;
+}
+
+.dish-name {
+  font-weight: 600;
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.dish-currency-price {
+  color: #525252;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dish-description {
+  color: #303336;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.controller-container {
+  width: fit-content;
+  height: 33px;
+  min-width: 120px;
+  justify-content: space-between;
+  background-color: #c7a718;
+  /* background-color: #00923f; */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.quantity {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.not-availability-text {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.addon-availability-text {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 5px 0;
+  color: #f44f4f;
+}
+
+.dish-calories {
+  min-width: 150px;
+  max-width: 250px;
+  font-weight: 500;
+  font-size: 18px;
+  align-self: center;
+}
+
+.dish-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  align-self: flex-start;
+}
+
+.add-to-cart {
+  padding: 4px;
+  background-color: #c7a718;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  
+  &:hover{
+    background-color: #f1b50e;
+  }
+}
+
+/* For Tablets (width between 768px and 1024px) */
+@media (max-width: 1024px) {
+  .dish-item-container {
+    align-items: flex-start;
+    padding: 15px;
+  }
+  
+  .dish-name {
+    font-size: 22px;
+  }
+
+  .dish-currency-price,
+  .dish-description,
+  .dish-calories {
+    font-size: 14px;
+  }
+
+  .dish-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  .quantity {
+    font-size: 16px;
+  }
+}
+
+/* For Mobile (width below 768px) */
+@media (max-width: 576px) {
+  .dish-item-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .dish-item-container {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+  }
+
+  .dish-name {
+    font-size: 20px;
+  }
+
+  .dish-description{
+    width: 70%;
+  }
+
+
+  .dish-currency-price,
+  .dish-description,
+  .dish-calories {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .dish-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .controller-container {
+    min-width: 100px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+
+  .quantity {
+    font-size: 14px;
+  }
+
+  .add-to-cart {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .dish-item-container {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+  }
+
+  .dish-image {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* For Large Screens (above 1024px) */
+@media (min-width: 1024px) {
+  .dish-item-container {
+    padding: 20px;
+  }
+
+  .dish-name {
+    font-size: 28px;
+  }
+
+  .dish-currency-price,
+  .dish-description,
+  .dish-calories {
+    font-size: 18px;
+  }
+
+  .dish-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .controller-container {
+    min-width: 130px;
+  }
+
+  .button {
+    font-size: 24px;
+  }
+
+  .quantity {
+    font-size: 20px;
+  }
+}

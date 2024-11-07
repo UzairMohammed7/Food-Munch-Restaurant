@@ -1,0 +1,77 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* From Uiverse.io by csemszepp */ 
+.LoginContainer {
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+}
+
+.LoginForm {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  background: #f9f9f9;
+  width: 35%;
+  height: 40%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.UsernameAndPasswordContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.LabelText {
+  color: #47556999;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.InputContainer {
+  border: 1px solid #94a3b8;
+  color: #3f5069;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.LoginButton {
+  background-color: #f1d062;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ecc537;
+  }
+}
+
+.ShowErrorMsg {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 0px;
+}
