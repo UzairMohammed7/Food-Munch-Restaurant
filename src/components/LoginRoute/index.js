@@ -76,8 +76,8 @@ class LoginRoute extends Component {
     if (jwtToken !== undefined) {
       return <Navigate to="/" />
     }
-
-    return (
+    
+    return ( 
       <div className="LoginContainer">
         <form className="LoginForm" onSubmit={this.onLogin}>
            <img
@@ -118,7 +118,7 @@ class LoginRoute extends Component {
             {showSubmitError && <p className="ShowErrorMsg">*{errorMsg}</p>}
           </div>
         </form>
-      </div>
+      </div>   
     )
   }
 }
